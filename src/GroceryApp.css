@@ -1,0 +1,37 @@
+body {
+  background-color: #4e5558;
+}
+.GroceryApp{
+  background-color: #887a6f;
+  min-height: 600px;
+  width: 400px;
+  margin: 50px auto;
+}
+#grocery-list input{
+  background: rgb(238, 219, 193);
+  border: 0px;;
+  width: 200px;
+  height: 50px;
+  padding: 0 20px;
+  margin: 30px;
+  font-size: 17px;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: #000000;
+}
+#grocery-list input::placeholder{
+  color: rgba(7, 0, 0, 0.5);
+}
+#grocery-list input:focus, #grocery-list button:focus{
+  outline: none;
+}
+#grocery-list button{
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(243, 221, 192);
+  cursor: pointer;
+  font-weight: bolder;
+  color: #000000;
+}
