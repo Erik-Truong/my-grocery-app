@@ -1,12 +1,11 @@
-import React from 'react';
+import React, {} from 'react';
 import './GroceryApp.css';
+import axios from 'axios';
 import List from './List.js';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faTrash);
-
-
 
 class GroceryApp extends React.Component{
   
@@ -22,6 +21,12 @@ class GroceryApp extends React.Component{
     this.useInput = this.useInput.bind(this);
     this.addItem = this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
+  }
+  //axios is promised-based
+  componentDidMount() {
+    axios.get('/server').then((responseData) => {
+      console.log('Data', responseData)
+    });
   }
   //setState changes state variable
   useInput(e){
