@@ -3,7 +3,7 @@ const PORT = 3001;
 const app = express();
 
 
-app.get('/', (req, res) => {
+app.get('/server', (req, res) => {
     res.status(200).send("Success")
 });
 
